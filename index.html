@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style/fontawesome-free-6.5.2-web/css/all.min.css">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title text-center my-5 pb-5">
+      <h1 class="position-relative d-inline-block">
+        <div class="layer position-absolute bottom-0 start-0 end-0 bg-warning bg-opacity-75"></div>
+        Bookmarker
+      </h1>
+    </div>
+    <div class="bookmark pb-5">
+      <h2 class="text-center"><i class="fa-solid fa-bookmark me-2"></i>Bookmark your favorite sites<i
+          class="fa-solid fa-bookmark ms-2"></i></h2>
+      <label for="sName" class="mb-1"><i class="fa-solid fa-file-signature me-2"></i>Site Name</label>
+      <input oninput="validateinput(this)" placeholder="Site Name" type="text" class="form-control" id="sName">
+      <label for="sUrl" class="mb-1 mt-4"><i class="fa-solid fa-link me-2"></i></i>Site Url</label>
+      <input oninput="validateinput(this)" placeholder="Site Url" type="text" class="form-control" id="sUrl">
+      <button onclick="siteobject()" class="btn btn-danger rounded-3 text-center mt-4 mx-auto d-block text-center px-5">Submit</button>
+    </div>
+    <div class="websiteinfo bg bg-white px-1 mb-0 mt-4 py-2 border-bottom border-secondary-subtle">
+      <ul class="list-unstyled d-flex justify-content-between mb-0">
+        <li class="text-center col-3">Index</li>
+        <li class="text-center col-3">Website Name</li>
+        <li class="text-center col-3">Visit</li>
+        <li class="text-center col-3">Delete</li>
+      </ul>
+    </div>
+    <div id="siteinfo">
+
+    </div>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
